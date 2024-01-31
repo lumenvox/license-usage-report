@@ -1,0 +1,11 @@
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+# Generated folders/files
+google/
+lumenvox/
+venv/

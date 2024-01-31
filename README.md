@@ -49,7 +49,7 @@ Once the above is completed, there should be `/lumenvox` and `/google` in
 the project root folder, so you can now run the test code, for example:
 
 ```shell
-python usage_report.py <api-ip-address>:<api-port> <deployment-id> <operator-id>
+python usage_report.py -i [reporting-api-ip-address]:[reporting-api-port] -d [deployment-id] -o [operator-id]
 ```
 
 The result may look something like this:

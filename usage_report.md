@@ -1,12 +1,19 @@
 ### Usage Report Script
 #### `usage_report.py`
 
-A simple script that takes the IP address and port of the reporting API service, deployment ID, operator ID, and an 
-option component name as arguments.
+A simple script that takes the IP address and port of the reporting API service, deployment ID, operator ID, an 
+optional component name and an optional certificate file (if using TLS) as arguments.
 Example:
 
 ```shell
-# py usage_report.py [ip:port] [deployment ID] [operator ID] [optional component name]
+# python usage_report.py -i [ip:port] -d [deployment ID] -o [operator ID] -c [optional component name]
+```
+
+If using a TLS connection, also provide the certificate file path as an argument. 
+Example:
+
+```shell
+# py usage_report.py -i [ip:port] -d [deployment ID] -o [operator ID] -c [optional component name] -cert [certificate file path]
 ```
 
 Running the script will print UsageReport output. 
